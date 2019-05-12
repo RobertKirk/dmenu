@@ -1,3 +1,10 @@
+My dmenu Fork
+=============
+
+I have a specified config.h, fuzzy search completion, and favourites for dmenu_run
+(from dmenu_path script).
+
+
 dmenu - dynamic menu
 ====================
 dmenu is an efficient dynamic menu for X.

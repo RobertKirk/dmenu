@@ -2,12 +2,13 @@
 
 cachedir="${XDG_CACHE_HOME:-"$HOME/.cache"}"
 cache="$cachedir/dmenu_run"
+favs="$HOME/.dwm/path-favourites"
 
 [ ! -e "$cachedir" ] && mkdir -p "$cachedir"
 
 IFS=:
 if stest -dqr -n "$cache" $PATH; then
-	stest -flx $PATH | sort -u | tee "$cache"
+	stest -flx $PATH | sort -u | cat "$favs" - | tee "$cache"
 else
 	cat "$cache"
 fi
