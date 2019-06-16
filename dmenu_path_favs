@@ -1,0 +1,4 @@
+#!/bin/sh
+
+favs="$HOME/.dwm/path-favourites"
+cat "$favs"

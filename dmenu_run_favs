@@ -1,0 +1,2 @@
+#!/bin/sh
+dmenu_path_favs | dmenu -l 5 "$@" | ${SHELL:-"/bin/sh"} &
